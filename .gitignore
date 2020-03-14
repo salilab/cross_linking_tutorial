@@ -1,5 +1,7 @@
 .cache
 .ipynb_checkpoints
 Doxyfile
-foxs.md
+cross-link_ms-ambiguity.md
+cross-link_ms.md
+index.md
 html
