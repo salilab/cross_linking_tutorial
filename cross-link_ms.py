@@ -70,7 +70,6 @@ for i in range(-100, 100):
     IMP.core.XYZ(pA).set_coordinates((i, 0, 0))
     scores.append(xl.rs.unprotected_evaluate(None))
 
-%matplotlib inline
 import pylab
 
 pylab.plot(xs, scores)
@@ -197,7 +196,6 @@ for p in np.linspace(0.01, 0.5, 100):
         scores.append(xl.rs.unprotected_evaluate(None))
 
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 fig, ax = plt.subplots()
 ax.scatter(psis, sigmas, c=scores, s=30, edgecolor='')
@@ -216,7 +214,6 @@ for p in np.linspace(0.01, 0.5, 100):
         scores.append(xl.rs.unprotected_evaluate(None))
 
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 fig, ax = plt.subplots()
 ax.scatter(psis, sigmas, c=scores, s=30, edgecolor='')
