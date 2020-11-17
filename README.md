@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/salilab/cross_linking_tutorial.svg?branch=master)](https://travis-ci.org/salilab/cross_linking_tutorial)
+[![Build Status](https://travis-ci.com/salilab/cross_linking_tutorial.svg?branch=master)](https://travis-ci.com/salilab/cross_linking_tutorial)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/salilab/cross_linking_tutorial/master?filepath=index.ipynb)
 
 This introduces the functionality in
