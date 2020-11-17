@@ -2,7 +2,7 @@
 # your tutorial regularly. Copy it to .travis.yml in the top level
 # directory of your tutorial, in the master branch.
 
-sudo: false
+os: linux
 language: python
 dist: xenial
 python:
