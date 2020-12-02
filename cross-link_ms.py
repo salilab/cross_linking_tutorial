@@ -9,6 +9,7 @@ import IMP.pmi.io
 import IMP.pmi.io.crosslink
 import IMP.pmi.restraints
 import IMP.pmi.restraints.crosslinking
+import ihm.cross_linkers
 
 m = IMP.Model()
 
@@ -55,8 +56,8 @@ cldb.create_set_from_file("xlinks.csv")
 print(cldb)
 
 xl = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
-    root_hier=hier, CrossLinkDataBase=cldb, length=21.0, slope=0.0,
-    resolution=1.0, label="XL")
+    root_hier=hier, database=cldb, length=21.0, slope=0.0,
+    resolution=1.0, label="XL", linker=ihm.cross_linkers.dss)
 
 print(xl.rs.unprotected_evaluate(None))
 
@@ -83,8 +84,8 @@ fcldb = cldb.filter(fo)
 print(fcldb)
 
 xl1 = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
-    root_hier=hier, CrossLinkDataBase=fcldb, length=21.0, slope=0.0,
-    resolution=1.0, label="XL")
+    root_hier=hier, database=fcldb, length=21.0, slope=0.0,
+    resolution=1.0, label="XL", linker=ihm.cross_linkers.dss)
 
 scores=[]
 xs=[]
@@ -198,7 +199,7 @@ for p in np.linspace(0.01, 0.5, 100):
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots()
-ax.scatter(psis, sigmas, c=scores, s=30, edgecolor='')
+ax.scatter(psis, sigmas, c=scores, s=30, edgecolor=[])
 plt.show()
 
 IMP.core.XYZ(pA).set_coordinates((100, 100, 100))
@@ -216,5 +217,5 @@ for p in np.linspace(0.01, 0.5, 100):
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots()
-ax.scatter(psis, sigmas, c=scores, s=30, edgecolor='')
+ax.scatter(psis, sigmas, c=scores, s=30, edgecolor=[])
 plt.show()
