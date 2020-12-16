@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/salilab/cross_linking_tutorial.svg?branch=master)](https://travis-ci.com/salilab/cross_linking_tutorial)
+[![Build Status](https://github.com/salilab/cross_linking_tutorial/workflows/build/badge.svg?branch=master)](https://github.com/salilab/cross_linking_tutorial/actions?query=workflow%3Abuild)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/salilab/cross_linking_tutorial/master?filepath=index.ipynb)
 
 This introduces the functionality in
