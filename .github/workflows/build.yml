@@ -23,7 +23,7 @@ jobs:
         submodules: true
     - name: Setup conda
       run: |
-        support/tutorial_tools/setup_travis.sh ${{ matrix.imp-branch }} ${{ matrix.python-version }}
+        support/tutorial_tools/setup_ci.sh ${{ matrix.imp-branch }} ${{ matrix.python-version }}
     - name: Test
       run: |
         eval "$(conda shell.bash hook)"
